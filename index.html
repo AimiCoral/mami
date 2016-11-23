@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,user-scalable=0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="musicbox">
+	<img src="images/mic.png" alt="">
+	<audio src="happay.mp3" autoplay loop paused></audio>
+</div>
+<div id="dowebok">
+	
+	<div class="section section1">
+		<div class="info">
+			<img src="images/1.png" alt="">
+		</div>
+	</div>
+	<div class="section section2">
+		<div class="info">
+			<img src="images/2.png" alt="">
+		</div>
+	</div>
+	<div class="section section3">
+		<div class="info">
+			<img src="images/3.png" alt="">
+		</div>
+	</div>
+	<div class="section section4">
+		<div class="info">
+			<img src="images/4.png" alt="">
+		</div>
+	</div>
+	<div class="section section5">
+
+		<div class="info">
+			<img src="images/5.png" alt="">
+		</div>
+	</div>
+	<div class="section section6">
+		<img src="images/6.png" alt="">
+		<div class="info">
+			<img src="images/happ.png" alt="">
+		</div>
+	</div>
+</div>
+</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/index.js"></script>
+	<script> 
+		$('#dowebok').fullpage({
+		afterLoad: function(anchorLink, index){
+			if(index == 1){
+				$('.section1').find('.info').delay(500).animate({
+					opacity: '1'
+				}, 1500, 'linear');
+			}
+			if(index == 2){
+				$('.section2').find('.info').delay(500).animate({
+					opacity: '1'
+				}, 1500, 'linear');
+			}
+			if(index == 3){
+				$('.section3').find('.info').delay(500).animate({
+					opacity: '1'
+				}, 1500, 'linear');
+			}
+			if(index == 4){
+				$('.section4').find('.info').delay(500).animate({
+					opacity: '1'
+				}, 1500, 'linear');
+			}
+			if(index == 5){
+				$('.section5').find('.info').delay(500).animate({
+					opacity: '1'
+				}, 1500, 'linear');
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == '1'){
+				$('.section1').find('.info').delay(500).animate({
+					opacity: '0'
+				}, 1500, 'linear');
+			}
+			if(index == '2'){
+				$('.section2').find('.info').delay(500).animate({
+					opacity: '0'
+				}, 1500, 'linear');
+			}
+			if(index == '3'){
+				$('.section3').find('.info').delay(500).animate({
+					opacity: '0'
+				}, 1500, 'linear');
+			}
+			if(index == '4'){
+				$('.section4').find('.info').delay(500).animate({
+					opacity: '0'
+				}, 1500, 'linear');
+			}
+			if(index == '5'){
+				$('.section5').find('.info').delay(500).animate({
+					opacity: '0'
+				}, 1500, 'linear');
+			}
+		}
+	});
+	</script>
+</html>
