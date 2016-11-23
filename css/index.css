@@ -154,7 +154,7 @@ body,html{
 	text-align: center;
 	position: absolute;
 	left:0px;
-	bottom:300px;
+	bottom:100px;
 }
 .section2 .info{
 	width: 100%;
@@ -169,7 +169,7 @@ body,html{
 	text-align: center;
 	position: absolute;
 	left:0px;
-	bottom:200px;
+	bottom:100px;
 	opacity: 0;
 }
 .section4 .info{
@@ -177,7 +177,7 @@ body,html{
 	text-align: center;
 	position: absolute;
 	left:0px;
-	top:400px;
+	top:200px;
 	opacity: 0;
 }
 .section5 .info{
@@ -185,7 +185,7 @@ body,html{
 	text-align: center;
 	position: absolute;
 	left:0px;
-	bottom:200px;
+	bottom:100px;
 	/*opacity: 0;*/
 }
 .section6 .info{
