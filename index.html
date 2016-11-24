@@ -41,9 +41,8 @@
 		</div>
 	</div>
 	<div class="section section6">
-		<img src="images/6.png" alt="">
 		<div class="info">
-			<img src="images/happ.png" alt="">
+			<img src="images/chun.png" alt="">
 		</div>
 	</div>
 </div>
@@ -80,6 +79,17 @@
 					opacity: '1'
 				}, 1500, 'linear');
 			}
+			if(index == 6){
+				$('.section6').find('.info').delay(500).animate({
+					right:'0'
+				} ,500, 'linear',function(){
+					$(".section6 .info").css("transform","scale(1.5)").append('<span>妈咪，生日快乐<span>');
+					$(".section6 .info").find('span').delay(500).animate({
+						opacity: '1'
+					}, 1500, 'linear');
+				})
+				
+			}
 		},
 		onLeave: function(index, direction){
 			if(index == '1'){
@@ -106,6 +116,13 @@
 				$('.section5').find('.info').delay(500).animate({
 					opacity: '0'
 				}, 1500, 'linear');
+			}
+			if(index == 6){
+				$('.section6').find('.info').delay(500).animate({
+					right:'-400'
+				},500, 'linear',function(){
+					$(".section6 .info").css("transform","scale(0)");
+				})
 			}
 		}
 	});
